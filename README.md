@@ -4,10 +4,11 @@ Diese Anleitung wurde auf einem Raspberry Pi 4B getestet mit Raspberrian Lite 64
 
 Schritt 1 bis 3 sind auf einem anderen Endgerät (z.B. Laptop) zu machen.
 1. Folgende Link öffnen: https://www.easyroam.de/Auth/Wayf?entityID=https://www.easyroam.de/shibboleth&return=https://www.easyroam.de/Shibboleth.sso/Login
+
    Nach "Hochschule München" suchen und mit der eigenen Kennung anmelden.
-2. Bei "Manuelle Optionen" als Dateityp "PKCS12" auswählen und einen selbstgewählten Namen für das Zertifikat vergeben. Dann auf "Zugang generieren" klicken.
+3. Bei "Manuelle Optionen" als Dateityp "PKCS12" auswählen und einen selbstgewählten Namen für das Zertifikat vergeben. Dann auf "Zugang generieren" klicken.
    Die Datei wird automatisch runtergeladen.
-3. Die runtergeladene Datei muss nun auf den Pi übertragen werden. Folgenden Command haben wir benutzt. (Eingabe in die CMD oder per Terminal)
+4. Die runtergeladene Datei muss nun auf den Pi übertragen werden. Folgenden Command haben wir benutzt. (Eingabe in die CMD oder per Terminal)
    scp -r /Pfad der heruntergeladenen Datei/Die Datei hat die Endung .p12 NameDesPis@IP-AdresseDesPis:/Verzeichnis/Wo es gespeichert werden soll
    Zum Bespiel so:
    scp -r /Users/chau/Downloads/my_easyroam_cert.p12 hokopi-piper@192.168.217.157:/home/hokopi-piper
