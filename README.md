@@ -49,17 +49,29 @@ Ab hier geht es auf dem Pi weiter. Als Beispiel heißt die Datei (die von easyro
 
 network={ 
    ssid="eduroam" 
+   
    scan_ssid=1 
+   
    key_mgmt=WPA-EAP 
+   
    proto=WPA2 
+   
    eap=TLS 
+   
    pairwise=CCMP 
+   
    group=CCMP 
+   
    identity="8314582678853535859@easyroam-pca.hm.edu"  # <---- Hier einfach die CN Datei mit einem Editor vim oder vi einlesen 
+   
    ca_cert="/etc/easyroam-certs/easyroam_root_ca.pem" 
+   
    client_cert="/etc/easyroam-certs/easyroam_client_cert.pem" 
+   
    private_key="/etc/easyroam-certs/easyroam_client_key.pem" 
-   private_key_passwd="Hier kommt das private key Passwort rein was oben festgelegt wurde" 
+   
+   private_key_passwd="Hier kommt das private key Passwort rein was oben festgelegt wurde"
+   
 }
 
 12. Anschließend den Pi neustarten:
