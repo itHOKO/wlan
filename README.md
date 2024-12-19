@@ -1,3 +1,5 @@
+2023er Weg:
+
 # Installation WLAN
 
 Diese Anleitung wurde auf einem Raspberry Pi 4B getestet mit Raspberrian Lite 64bit legacy als OS.
