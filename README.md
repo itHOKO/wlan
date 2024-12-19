@@ -1,3 +1,22 @@
+2024er Weg :)
+Easyroam - Linux (Ubuntu)
+The certificate is only vaild for 90 days and needs to be replaced after this timeframe.
+
+1. Goto https://www.easyroam.de in your webbrowser
+2. In the search field input your Institution "Technische Hochschule Aschaffenburg" 
+3. Login
+3. Click on "Manuel options“ and select PKCS12
+4. Input a Profile name of your choice and press "Generate profile"
+5. Download the configuration script easyroam.sh
+6. Open a terminal in your download directory and run the script with the path to the certificate as argument: e.g.:
+ sh easyroam.sh easyroam_*.p12
+
+https://helpdesk.th-ab.de/help/en-us/6-configure-eduroam-easyroam/9-easyroam-linux-ubuntu
+
+siehe easyroam.sh
+
+Bei 2/3 Pis ging das alles sehr entspannt so. Bei dem anderen wars bisschen komisch weiß nicht wieso aber die Lösung für des Problem ist in einer txz auf dem Pi selbst dokumentiert. Bei den anderen 2 ist nur diese Anleitng als txt drauf.
+
 2023er Weg:
 
 # Installation WLAN
